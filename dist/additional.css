@@ -1,0 +1,54 @@
+
+.nav-bar{
+    background-color: #1E293B;
+}
+body{
+    background-color: #0F172A;
+    color: #F1F5F9;
+    font-family: Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.help{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text{
+    font-family:monospace;
+    border: 2px solid black;
+    
+}
+.cs{
+     font-family:monospace;
+}
+.card{
+    background-color: #3e557b;
+    color: #F1F5F9;
+    transition: all 0.5s ease-in-out;
+}
+.card2{
+    background-color: bisque;
+    transition: all 0.5s ease-in-out;
+}
+.card2:hover{
+    box-shadow: 5px 5px 15px #3e557b;
+}
+.heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.header{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.card:hover{
+    box-shadow: 5px 5px 15px bisque;
+}
+
+.middle{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.show{
+    font-family:monospace;
+}
