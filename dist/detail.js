@@ -137,27 +137,27 @@ const DOMAIN_FIELDS = [
 
     // Function 1: Card se title aur description khud utha leta hai
 function getCardInfo(index) {
-  const cards = document.querySelectorAll(".homeview .click");  // sab cards dhoondo
-  const card = cards[index];                                    // jo number diya, wahi card uthao
-  const title = card.querySelector("h1").innerText.trim();       // uska title nikalo
-  const desc = card.querySelector("p").innerText.trim();         // uski description nikalo
+  const cards = document.querySelectorAll(".homeview .click"); 
+  const card = cards[index];                                    
+  const title = card.querySelector("h1").innerText.trim();      
+  const desc = card.querySelector("p").innerText.trim();         
   return { title, description: desc };
 }
 
-// Function 2: Ye chalega jab koi card click hoga (onclick="showdomain(0)")
+ (onclick="showdomain(0)")
 function showdomain(index) {
-  const info = getCardInfo(index);              // card ka title/desc uthao
-  const fields = DOMAIN_FIELDS[index].fields;    // usi index ki fields uthao
+  const info = getCardInfo(index);          
+  const fields = DOMAIN_FIELDS[index].fields; 
 
-  // detail page mein data bhar do
+ 
   document.getElementById("detailTitle").innerText = info.title;
   document.getElementById("detailDesc").innerText = info.description;
   document.getElementById("fieldCount").innerText = fields.length + " fields inside this domain";
 
   const fieldList = document.getElementById("fieldList");
-  fieldList.innerHTML = "";   // purani fields saaf karo
+  fieldList.innerHTML = "";   
 
-  // har field ke liye ek naya card banao
+ 
   fields.forEach((field, i) => {
     const row = document.createElement("div");
     row.className = "rounded-2xl h-auto " + (i % 2 === 0 ? "card" : "card2") + " px-10 py-4 my-8 bg-amber-50 text-black";
@@ -168,13 +168,13 @@ function showdomain(index) {
     fieldList.appendChild(row);
   });
 
-  // home chhupao, detail dikhao
+  
   document.querySelector(".homeview").style.display = "none";
   document.getElementById("detailView").style.display = "block";
   window.scrollTo(0, 0);
 }
 
-// Function 3: Back button ke liye (onclick="goBack()")
+ (onclick="goBack()")
 function goBack() {
   document.getElementById("detailView").style.display = "none";
   document.querySelector(".homeview").style.display = "block";
